@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.ttf') format('truetype');
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    grid-gap: 5px;
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(100vh - 100px - 10px) 50px;
+    
+
+}
+
+.header{
+    background-color: rgb(165, 40, 248);
+    padding: 10px;
+    grid-area: header;
+}
+
+.aside{
+    background-color: rgb(171, 124, 202);
+    padding: 10px;
+    grid-area: aside;
+
+}
+
+.List{
+    list-style: none;
+    background-color: rgb(171, 124, 202);
+    text-align: center;
+    text-decoration: none;
+}
+
+li{
+    padding: 9px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+a:hover{
+    color: rgb(230, 16, 62);
+}
+
+.main{
+    background-color: rgb(231, 138, 219);
+    padding: 10px;
+    grid-area: main;
+
+}
+
+.footer{
+    background-color: rgb(241, 111, 111);
+    padding: 10px;
+    grid-area: footer;
+}
